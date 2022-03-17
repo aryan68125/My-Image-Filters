@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.myimagefilters"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //scalable dp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //SSP - a Scalable Size Unit for text
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //Rounded image View support for this application
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //GPU image for Android
+    //Android filters based on OpenGL Android developers can use it for image processing
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    //Koin -> A pragmatic lightweight dependency injection framework for kotlin developers
+    implementation "io.insert-koin:koin-core:3.1.5"
+    implementation "io.insert-koin:koin-android:3.1.5"
+
+
+    //ViewModel -> The ViewModel is a class designed to store and manage UI-related data in a lifecycle conscious way
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+    //adding gif support dependency
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.20'
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4895ef</color>
+    <color name="primaryDark">#1d3557</color>
+    <color name="secondary">#FEEAA5</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="landingBackgroundCenter">#DC000000</color>
+    <color name="landingBackgroundEnd">#F6000000</color>
+    <color name ="buttonSavedImages">#8B9A46</color>
+    <color name ="buttonEditNewImage">#D885A3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white_blue">#c3b5fd</color>
+    <color name = "selectedFilter">#81b622</color>
+    <color name = "shareButton">#005f73</color>
+    <color name = "RED">#F40404</color>
+</resources>
