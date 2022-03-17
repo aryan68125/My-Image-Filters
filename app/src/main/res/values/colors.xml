@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#4895ef</color>
-    <color name="primaryDark">#1d3557</color>
+    <color name="primary">#070707</color>
+    <color name="primaryDark">#090909</color>
     <color name="secondary">#FEEAA5</color>
     <color name="primaryText">#212121</color>
     <color name="secondaryText">#757575</color>
